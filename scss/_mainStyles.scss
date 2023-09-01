@@ -1,0 +1,14 @@
+@import "variables/variables";
+
+body {
+  font-family: $font-stack;
+  margin: 5px;
+  padding: 0px;
+}
+.main-content {
+  padding: 5px 15px 15px 15px;
+  ul {
+    list-style-type: none;
+    padding-top: 5px;
+  }
+}

@@ -1,0 +1,39 @@
+@import "variables/variables";
+
+.aside-steps {
+  height: 568px;
+  font-family: $font-stack;
+  font-size: $font-size-paragraph;
+  color: $white;
+  background-repeat: no-repeat;
+  background-image: url("/src/assets/bg-sidebar-desktop.svg");
+  .step {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    &__dot {
+      border: 2px solid $white;
+      text-align: center;
+      font-size: 18px;
+      height: 30px;
+      width: 30px;
+      border-radius: 50%;
+    }
+    .step__dot-current {
+      @extend .step__dot;
+      background-color: $pastel-blue;
+      border: none;
+      font-weight: bolder;
+      color: $marin-blue;
+    }
+    &__step-number {
+      font-size: 13px;
+      color: $pastel-blue;
+    }
+    .content-step {
+      font-weight: bolder;
+      color: $white;
+      margin: auto;
+    }
+  }
+}
